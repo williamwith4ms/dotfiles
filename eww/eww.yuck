@@ -2,6 +2,7 @@
 
 (defwidget bar []
   (centerbox :orientation "h"
+  ; :class "bar"
     (left)
     (center)
     (right)
@@ -13,6 +14,8 @@
     :halign "start"
     :spacing 5
     :class "left"
+    :hexpand true
+    :space-evenly false
     (workspaces)
     (updates)
   )
@@ -23,6 +26,8 @@
     :halign "center"
     :spacing 5
     :class "center"
+    :hexpand false
+    :space-evenly false
     (clock)
   )
 )
@@ -30,16 +35,32 @@
 (defwidget right []
   (box :orientation "h"
     :halign "end"
-    :spacing 5
+    :spacing 10
     :class "right"
+    :hexpand true
+    :space-evenly false
     (media)
     (tray)
     (volume)
   )
 )
 
-(defwindow bar
+(defwindow bar0
   :monitor 0
+  :windowtype "dock"
+  :geometry (geometry
+    :x "0%"
+    :y "0.5%"
+    :width "99%"
+    :height "2%"
+  :anchor "top center")
+  :exclusive true
+  (bar)
+)
+
+(defwindow bar1
+  :monitor 1
+  :class "bar"
   :windowtype "dock"
   :geometry (geometry
     :x "0%"

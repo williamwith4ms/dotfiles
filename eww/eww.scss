@@ -1,0 +1,100 @@
+///////////////////////////
+// * COLORS AND GLOBAL * //
+///////////////////////////
+
+$fg-color: #d9d9d9;
+$bg-color: #232323;
+
+$bg-accent-green: #5ca77c;
+$bg-accent-red: #c2565a;
+$bg-accent-blue: #5c7cc2;
+$bg-accent-yellow: #c2b25c;
+$bg-accent-purple: #7c5fc0;
+$bg-accent-cyan: #5ca7a7;
+
+.bar0, 
+.bar1 {
+    margin: 2px 4px;
+    font-weight: bold;
+    border-radius: 13px;
+}
+
+
+////////////////
+// * GROUPS * //
+////////////////
+
+// .right {}
+
+// .center {}
+
+// .left {}
+
+
+
+/////////////////
+// * WIDGETS * //
+/////////////////
+
+// * WORKSPACES * //
+.workspaces {
+    background-color: $bg-accent-green;
+    padding: 0px 10px;
+    margin: 2px;
+    border-radius: 13px;
+}
+
+.ws-active {
+    background-color: rgba($fg-color, 0.5);
+}
+
+.ws-inactive {
+    background-color: transparent;
+}
+
+.workspaces button {
+    border: none;
+    padding: 4px 12px 4px 8px;
+}
+
+.workspaces button:hover {
+    background-color: rgba($fg-color, 0.5);
+    border: none;
+}
+
+// * UPDATES * //
+.updates {
+    background-color: $bg-accent-blue;
+    padding: 0px 10px;
+    margin: 2px;
+    border-radius: 13px;
+}
+
+// * VOLUME * //
+.volume {
+    background-color: $bg-accent-red;
+    border-radius: 13px;
+    padding: 0px 10px;
+    margin: 2px;
+}
+
+.volume:hover {
+    background-color: rgba($fg-color, 0.5);
+}
+
+// * TRAY * //
+.tray {
+    background-color: $bg-accent-yellow;
+    border-radius: 13px;
+    min-width: 50px;
+    padding: 0px 10px;
+    margin: 2px;
+}
+
+// * MEDIA * //
+.media {
+    background-color: $bg-accent-purple;
+    border-radius: 13px;
+    padding: 0px 10px;
+    margin: 2px;
+}

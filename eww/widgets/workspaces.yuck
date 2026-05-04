@@ -2,7 +2,7 @@
   (box :class "workspaces"
        :orientation "h"
        :halign "start"
-       :spacing 5
+      ;  :spacing 5
     (for ws_id in workspace_ids
       (button :onclick "hyprctl dispatch workspace ${ws_id}"
               :class {active_workspace == ws_id ? "ws-active" : "ws-inactive"}
