@@ -2,7 +2,9 @@
 
 ## Workspaces
 `ws-active` : active workspace
+
 `ws-inactive` : inactive workspace
+
 `workspace` : workspace container
 
 ## Clock
