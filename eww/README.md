@@ -19,6 +19,9 @@
 ## media
 `media` : media container
 
+## updates
+`updates` : updates container
+
 # Listeners/Polls
 
 ## Workspaces
@@ -32,3 +35,6 @@
 
 ## media
 `current_media` : current media playing
+
+## updates
+`current_updates` : current number of updates available

@@ -1,0 +1,9 @@
+(defpoll current_updates :interval "1h" "scripts/updates.sh")
+
+(defwidget updates []
+    (box
+        :class "updates"
+        :halign "end"
+        (label :text "󰊠  ${current_updates}")
+    )
+)
