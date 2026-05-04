@@ -2,3 +2,4 @@
 (include "widgets/workspaces.yuck")
 (include "widgets/clock.yuck")
 (include "widgets/tray.yuck")
+(include "widgets/media.yuck")

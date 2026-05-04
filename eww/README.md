@@ -16,6 +16,8 @@
 ## volume
 `volume` : volume container
 
+## media
+`media` : media container
 
 # Listeners/Polls
 
@@ -27,3 +29,6 @@
 
 ## volume
 `current_volume` : current volume level
+
+## media
+`current_media` : current media playing

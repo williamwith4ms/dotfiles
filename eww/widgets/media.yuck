@@ -1,0 +1,9 @@
+(defpoll current_media :interval "1s" "scripts/get_media.sh" )
+
+(defwidget media []
+    (button
+        :class "media"
+        :halign "end"
+        (label :text "${current_media}")
+    )
+)
