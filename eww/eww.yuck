@@ -2,7 +2,7 @@
 
 (defwidget bar []
   (centerbox :orientation "h"
-  ; :class "bar"
+  :class "bar"
     (left)
     (center)
     (right)
@@ -60,7 +60,6 @@
 
 (defwindow bar1
   :monitor 1
-  :class "bar"
   :windowtype "dock"
   :geometry (geometry
     :x "0%"

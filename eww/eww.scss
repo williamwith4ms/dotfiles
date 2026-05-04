@@ -16,10 +16,20 @@ $bg-accent-cyan: #5ca7a7;
 
 .bar0, 
 .bar1 {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.bar {
     margin: 2px 4px;
+    padding: 2px 4px;
     font-weight: bold;
     border-radius: 13px;
-    background-color: rgba($bg-color, 0.7);
+    background-color: rgba($bg-color, 0.9);
+    // border: 1px solid;
+    border-color: $bg-accent-green;
 }
 
 
