@@ -1,0 +1,6 @@
+(defwidget tray []
+  (systray :class "tray"
+    :orientation "h"
+    :spacing 5
+    :icon-size 20
+  :prepend-new true))

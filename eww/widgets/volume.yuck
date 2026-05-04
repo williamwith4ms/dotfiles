@@ -1,0 +1,12 @@
+(deflisten current_volume "scripts/vol_listener.sh")
+
+(defwidget volume []
+  (eventbox :onscroll "scripts/volume_control.sh {}"
+    :class "volume"
+    (button
+      :halign "end"
+      :onclick "pavucontrol &"
+      (label :text "  ${current_volume}")
+    )
+  )
+)

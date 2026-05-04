@@ -1,0 +1,50 @@
+(include "widgets/index.yuck")
+
+(defwidget bar []
+  (centerbox :orientation "h"
+    (left)
+    (center)
+    (right)
+  )
+)
+
+(defwidget left []
+  (box :orientation "h"
+    :halign "start"
+    :spacing 5
+    :class "left"
+    (workspaces)
+  )
+)
+
+(defwidget center []
+  (box :orientation "h"
+    :halign "center"
+    :spacing 5
+    :class "center"
+    (clock)
+  )
+)
+
+(defwidget right []
+  (box :orientation "h"
+    :halign "end"
+    :spacing 5
+    :class "right"
+    (tray)
+    (volume)
+  )
+)
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry
+    :x "0%"
+    :y "0.5%"
+    :width "99%"
+    :height "2%"
+  :anchor "top center")
+  :exclusive true
+  (bar)
+)
