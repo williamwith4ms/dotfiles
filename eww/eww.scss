@@ -5,7 +5,7 @@
 $fg-color: #d9d9d9;
 $bg-color: #232323;
 $fg-color-bold: #ffffff;
-$bg-color-bold: #202020;
+$bg-color-bold: #141414;
 
 $bg-accent-green: #5ca77c;
 $bg-accent-red: #c2565a;
@@ -125,4 +125,11 @@ $bg-accent-cyan: #5ca7a7;
     border-radius: 13px;
     padding: 0px 10px;
     margin: 2px;
+}
+
+.battery {
+    background-color: $bg-color-bold;
+    padding: 0px 10px;
+    margin: 2px;
+    border-radius: 13px;
 }

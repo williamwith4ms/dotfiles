@@ -5,3 +5,4 @@
 (include "widgets/media.yuck")
 (include "widgets/updates.yuck")
 (include "widgets/window_title.yuck")
+(include "widgets/battery.yuck")

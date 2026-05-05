@@ -1,0 +1,10 @@
+(deflisten current_battery "scripts/battery_listener.sh")
+
+(defwidget battery []
+    (box
+        :class "battery"
+        :halign "end"
+        :visible {current_battery != ""}
+        (label :text "${current_battery}")
+    )
+)
