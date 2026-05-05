@@ -1,11 +1,13 @@
-(deflisten current_window :interval "1h" "scripts/get_active_window.sh")
+(deflisten current_window "scripts/get_active_window.sh")
 
 (defwidget window_title []
   (box
     :class "window_title"
     :halign "end"
+    :visible {current_window != "null" && current_window != "" && current_window != " "}
     (label :text "${current_window}"
       :limit-width 30
-    :show-truncated true)
+      :show-truncated true
+    )
   )
 )
