@@ -113,13 +113,14 @@ $bg-accent-cyan: #5ca7a7;
     margin: 2px;
 }
 
+// * CLOCK * //
 .clock {
     background-color: $bg-color-bold;
     border-radius: 13px;
     padding: 0px 10px;
     margin: 2px;
 }
-
+// * WINDOW TITLE * //
 .window_title {
     background-color: $bg-color-bold;
     border-radius: 13px;
@@ -127,6 +128,7 @@ $bg-accent-cyan: #5ca7a7;
     margin: 2px;
 }
 
+// * BATTERY * //
 .battery {
     background-color: $bg-color-bold;
     padding: 0px 10px;
