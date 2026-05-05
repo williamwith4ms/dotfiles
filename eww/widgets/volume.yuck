@@ -6,7 +6,7 @@
       :class "volume"
       :halign "end"
       :onclick "pavucontrol &"
-      (label :text "  ${current_volume}")
+      (label :text "${current_volume}")
     )
   )
 )
