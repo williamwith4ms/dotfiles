@@ -2,7 +2,7 @@
 
 (defwidget bar []
   (centerbox :orientation "h"
-  ; :class "bar"
+  :class "bar"
     (left)
     (center)
     (right)
@@ -16,8 +16,9 @@
     :class "left"
     :hexpand true
     :space-evenly false
-    (workspaces)
+    (clock)
     (updates)
+    (window_title)
   )
 )
 
@@ -28,7 +29,8 @@
     :class "center"
     :hexpand false
     :space-evenly false
-    (clock)
+    
+    (workspaces)
   )
 )
 
@@ -42,6 +44,7 @@
     (media)
     (tray)
     (volume)
+    (battery)
   )
 )
 
@@ -60,7 +63,6 @@
 
 (defwindow bar1
   :monitor 1
-  :class "bar"
   :windowtype "dock"
   :geometry (geometry
     :x "0%"

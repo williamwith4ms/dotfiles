@@ -4,6 +4,8 @@
 
 $fg-color: #d9d9d9;
 $bg-color: #232323;
+$fg-color-bold: #ffffff;
+$bg-color-bold: #141414;
 
 $bg-accent-green: #5ca77c;
 $bg-accent-red: #c2565a;
@@ -14,9 +16,20 @@ $bg-accent-cyan: #5ca7a7;
 
 .bar0, 
 .bar1 {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.bar {
     margin: 2px 4px;
+    padding: 2px 4px;
     font-weight: bold;
     border-radius: 13px;
+    background-color: rgba($bg-color, 0.9);
+    border: 2px solid;
+    border-color: $bg-accent-green;
 }
 
 
@@ -38,14 +51,14 @@ $bg-accent-cyan: #5ca7a7;
 
 // * WORKSPACES * //
 .workspaces {
-    background-color: $bg-accent-green;
+    background-color: $bg-color-bold;
     padding: 0px 10px;
     margin: 2px;
     border-radius: 13px;
 }
 
 .ws-active {
-    background-color: rgba($fg-color, 0.5);
+    color: $bg-accent-green;
 }
 
 .ws-inactive {
@@ -64,7 +77,7 @@ $bg-accent-cyan: #5ca7a7;
 
 // * UPDATES * //
 .updates {
-    background-color: $bg-accent-blue;
+    background-color: $bg-color-bold;
     padding: 0px 10px;
     margin: 2px;
     border-radius: 13px;
@@ -72,10 +85,11 @@ $bg-accent-cyan: #5ca7a7;
 
 // * VOLUME * //
 .volume {
-    background-color: $bg-accent-red;
+    background-color: $bg-color-bold;
     border-radius: 13px;
     padding: 0px 10px;
     margin: 2px;
+    border: none;
 }
 
 .volume:hover {
@@ -84,7 +98,7 @@ $bg-accent-cyan: #5ca7a7;
 
 // * TRAY * //
 .tray {
-    background-color: $bg-accent-yellow;
+    background-color: $bg-color-bold;
     border-radius: 13px;
     min-width: 50px;
     padding: 0px 10px;
@@ -93,8 +107,29 @@ $bg-accent-cyan: #5ca7a7;
 
 // * MEDIA * //
 .media {
-    background-color: $bg-accent-purple;
+    background-color: $bg-color-bold;
     border-radius: 13px;
     padding: 0px 10px;
     margin: 2px;
+}
+
+.clock {
+    background-color: $bg-color-bold;
+    border-radius: 13px;
+    padding: 0px 10px;
+    margin: 2px;
+}
+
+.window_title {
+    background-color: $bg-color-bold;
+    border-radius: 13px;
+    padding: 0px 10px;
+    margin: 2px;
+}
+
+.battery {
+    background-color: $bg-color-bold;
+    padding: 0px 10px;
+    margin: 2px;
+    border-radius: 13px;
 }
