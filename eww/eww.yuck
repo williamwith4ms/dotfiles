@@ -16,8 +16,9 @@
     :class "left"
     :hexpand true
     :space-evenly false
-    (workspaces)
+    (clock)
     (updates)
+    (window_title)
   )
 )
 
@@ -28,7 +29,8 @@
     :class "center"
     :hexpand false
     :space-evenly false
-    (clock)
+    
+    (workspaces)
   )
 )
 
@@ -51,7 +53,7 @@
   :geometry (geometry
     :x "0%"
     :y "0.5%"
-    :width "80%"
+    :width "99%"
     :height "2%"
   :anchor "top center")
   :exclusive true

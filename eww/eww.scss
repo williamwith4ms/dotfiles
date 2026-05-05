@@ -28,7 +28,7 @@ $bg-accent-cyan: #5ca7a7;
     font-weight: bold;
     border-radius: 13px;
     background-color: rgba($bg-color, 0.9);
-    // border: 1px solid;
+    border: 2px solid;
     border-color: $bg-accent-green;
 }
 
@@ -114,6 +114,13 @@ $bg-accent-cyan: #5ca7a7;
 }
 
 .clock {
+    background-color: $bg-color-bold;
+    border-radius: 13px;
+    padding: 0px 10px;
+    margin: 2px;
+}
+
+.window_title {
     background-color: $bg-color-bold;
     border-radius: 13px;
     padding: 0px 10px;
