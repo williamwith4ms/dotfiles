@@ -1,4 +1,4 @@
-(defpoll current_updates :interval "1h" "scripts/updates.sh")
+(defpoll current_updates :interval "1h" "scripts/eww_updates_poll.sh")
 
 (defwidget updates []
     (box

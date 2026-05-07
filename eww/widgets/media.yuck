@@ -1,8 +1,9 @@
-(defpoll current_media :interval "1s" "scripts/get_media.sh" )
+(deflisten current_media "scripts/eww_media_listener.sh" )
 
 (defwidget media []
   (box :class "media"
+  :visible {current_media != ""}
     (label :class "media-label"
-           :text {current_media != "" ? "${current_media}" : "Silence"}
-           :limit-width 30
-           :show-truncated true)))
+      :text "${current_media}"
+      :limit-width 30
+    :show-truncated true)))

@@ -15,4 +15,4 @@
 (defvar active_symbol "")
 (defvar inactive_symbol "")
 
-(deflisten active_workspace "scripts/get_active_workspace.sh")
+(deflisten active_workspace "scripts/eww_active_workspace_listener.sh")

@@ -1,7 +1,7 @@
-(deflisten current_volume "scripts/vol_listener.sh")
+(deflisten current_volume "scripts/eww_vol_listener.sh")
 
 (defwidget volume []
-  (eventbox :onscroll "scripts/volume_control.sh {}"
+  (eventbox :onscroll "scripts/eww_volume_control.sh {}"
   (button
       :class "volume"
       :halign "end"
