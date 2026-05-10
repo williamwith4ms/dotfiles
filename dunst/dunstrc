@@ -1,3 +1,6 @@
 [global]
-    follow = mouse
-    
+    follow = mouse 
+
+[play_sound]
+  summary = "*"
+  script = ~/.config/scripts/notify_alert.sh
