@@ -62,9 +62,9 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 -- Screenshots
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
-hl.bind (mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m active -m window"))
-hl.bind (mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m active -m output"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -o ~/Pictures/Screenshots/ -m region"))
+hl.bind (mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -o ~/Pictures/Screenshots/ -m active -m window"))
+hl.bind (mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -o ~/Pictures/Screenshots/ -m active -m output"))
 
 -- dunst
 hl.bind(mainMod .. " + grave", hl.dsp.exec_cmd("dunstctl history-pop"))
