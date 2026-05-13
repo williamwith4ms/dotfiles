@@ -1,23 +1,30 @@
 configuration {
 /*	modes: "window,drun,run,ssh";*/
 /*	font: "mono 12";*/
-	location: 2;
+/*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
 /*	show-icons: false;*/
 /*	preview-cmd: ;*/
-	terminal: "kitty";
-  sh-client: "ssh";
-	ssh-command: "konsole -e {ssh-client} {host} [-p {port}]";
+/*	on-selection-changed: ;*/
+/*	on-mode-changed: ;*/
+/*	on-entry-accepted: ;*/
+/*	on-menu-canceled: ;*/
+/*	on-menu-error: ;*/
+/*	on-screenshot-taken: ;*/
+/*	terminal: "rofi-sensible-terminal";*/
+/*	ssh-client: "ssh";*/
+/*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
-	run-shell-command: "{terminal} -e {cmd}";
+/*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
+/*	drun-exclude-categories: ;*/
 /*	drun-show-actions: false;*/
 /*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
 /*	drun-url-launcher: "xdg-open";*/
@@ -26,6 +33,7 @@ configuration {
 /*	sort: false;*/
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
+/*	case-smart: false;*/
 /*	cycle: true;*/
 /*	sidebar-mode: false;*/
 /*	hover-select: false;*/
@@ -58,6 +66,7 @@ configuration {
 /*	refilter-timeout-limit: 300;*/
 /*	xserver-i300-workaround: false;*/
 /*	completer-mode: "filebrowser";*/
+/*	imdkit: true;*/
 /*	pid: "/run/user/1000/rofi.pid";*/
 /*	display-window: ;*/
 /*	display-run: ;*/
@@ -67,7 +76,6 @@ configuration {
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
 /*	display-recursivebrowser: ;*/
-/*	display-calc: ;*/
 /*	kb-primary-paste: "Control+V,Shift+Insert";*/
 /*	kb-secondary-paste: "Control+v,Insert";*/
 /*	kb-secondary-copy: "Control+c";*/
@@ -140,6 +148,8 @@ configuration {
 /*	kb-select-10: "Super+0";*/
 /*	kb-entry-history-up: "Control+Up";*/
 /*	kb-entry-history-down: "Control+Down";*/
+/*	kb-matcher-up: "Super+equal";*/
+/*	kb-matcher-down: "Super+minus";*/
 /*	ml-row-left: "ScrollLeft";*/
 /*	ml-row-right: "ScrollRight";*/
 /*	ml-row-up: "ScrollUp";*/
@@ -156,3 +166,5 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+@theme "~/.config/rofi/theme.rasi"
