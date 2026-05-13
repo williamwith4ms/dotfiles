@@ -18,7 +18,7 @@ emit_battery() {
 	else
 		icon=${DischargingIcons[$idx]}
 	fi
-	echo "$icon  $battery_level%"
+	echo "$icon$battery_level%"
 
 }
 
