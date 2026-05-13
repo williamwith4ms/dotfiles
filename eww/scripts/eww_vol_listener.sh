@@ -10,13 +10,13 @@ get_vol() {
     else
         local vol_num=$(awk '{print int($2 * 100)}' <<< "$status")
         if (($vol_num == 0)) ; then
-            echo "󰝟  $vol_num%"
+            echo "󰝟 $vol_num%"
         elif (( $vol_num < 25 )); then
-            echo "󰕿  $vol_num%"
+            echo "󰕿 $vol_num%"
         elif (( $vol_num < 60 )); then
-            echo "󰖀  $vol_num%"
+            echo "󰖀 $vol_num%"
         else
-            echo "󰕾  $vol_num%"
+            echo "󰕾 $vol_num%"
         fi
     fi
 }

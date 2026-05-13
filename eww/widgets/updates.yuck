@@ -4,6 +4,6 @@
     (box
         :class "updates"
         :halign "end"
-        (label :text "󰊠  ${current_updates}")
+        (label :text "󰊠 ${current_updates}")
     )
 )

@@ -4,6 +4,6 @@
   (box :class "media"
   :visible {current_media != ""}
     (label :class "media-label"
-      :text "${current_media}"
+      :text " ${current_media}"
       :limit-width 30
     :show-truncated true)))

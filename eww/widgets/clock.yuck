@@ -3,9 +3,8 @@
     :orientation "h"
     :halign "center"
     :spacing 5
-    (label :text time)
+    (label :text " ${time}")
   )
 )
 
-(defpoll time :interval "1s"
-"date '+%H:%M %b %d, %Y'")
+(defpoll time :interval "1s" "date '+%H:%M:%S %b %d, %Y'")
