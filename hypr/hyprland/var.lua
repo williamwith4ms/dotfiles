@@ -9,4 +9,4 @@ notification_daemon = "dunst"
 wallet_pam = "/usr/lib/pam_kwallet_init"
 wallet = "kwallet6"
 --- VARIABLES ---
-wallpaper = "~/Pictures/.wallpaper/wall.png"
+wallpaper = "~/.config/wallpapers/wall.png"

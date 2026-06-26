@@ -1,8 +1,8 @@
-hl.window_rule {
-  name = "kitty-transparency",
-  match = {class = "^(kitty)$"},
-  opacity = 0.9
-}
+-- hl.window_rule {
+--   name = "kitty-transparency",
+--   match = {class = "^(kitty)$"},
+--   opacity = 0.9
+-- }
 
 hl.window_rule {
   name = "anki-transparency",
@@ -43,4 +43,10 @@ hl.window_rule {
   name = "suppress-maximize-events",
   match = {class = ".*"},
   suppress_event = "maximize"
+}
+
+hl.window_rule {
+  name = "keepassxc-float", 
+  match = {class = "^(org.keepassxc.*)$"},
+  float = true,
 }

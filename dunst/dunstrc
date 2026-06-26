@@ -1,6 +1,27 @@
 [global]
     follow = mouse 
+    corner_radius = 10
+    background = "#232323"
+    frame_color = "#5ca77c"
+    foreground = "#d9d9d9"
+    font = "JetBrainsMono Nerd Font Mono 9"
+
+[urgency_low]
+  background = "#232323"
+  frame_color = "#141414"
+  foreground = "#d9d9d9"
+
+[urgency_normal]
+  background = "#232323"
+  frame_color = "#5ca77c"
+  foreground = "#d9d9d9"
+
+[urgency_critical]
+  background = "#232323"
+  frame_color = "#c2565a"
+  foreground = "#d9d9d9"
 
 [play_sound]
   summary = "*"
   script = ~/.config/scripts/notify_alert.sh
+

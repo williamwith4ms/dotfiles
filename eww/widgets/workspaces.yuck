@@ -4,7 +4,7 @@
        :halign "start"
       ;  :spacing 5
     (for ws_id in workspace_ids
-      (button :onclick "hyprctl dispatch workspace ${ws_id}"
+      (button :onclick "hyprctl dispatch \"hl.dsp.focus({workspace = ${ws_id}})\""
               :class {active_workspace == ws_id ? "ws-active" : "ws-inactive"}
         {active_workspace == ws_id ? active_symbol : inactive_symbol})
     )

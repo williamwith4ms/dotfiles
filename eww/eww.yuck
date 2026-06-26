@@ -17,7 +17,7 @@
     :hexpand true
     :space-evenly false
     (clock)
-    (updates)
+    ; (updates)
     (window_title)
   )
 )
