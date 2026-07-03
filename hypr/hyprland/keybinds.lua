@@ -8,9 +8,10 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
+hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
 -- Menu
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu .. " -show drun"))
-hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd(menu .. " -show window"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(menu .. " -show window"))
 hl.bind(mainMod .. " + CTRL + D", hl.dsp.exec_cmd(menu .. " -show ssh"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | " .. menu .. " -dmenu -display-columns 2 | cliphist decode | wl-copy"))
 hl.bind(mainMod .. " + period", hl.dsp.exec_cmd("rofimoji -a copy"))
@@ -49,8 +50,8 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("~/.config/scripts/volume_control.sh up"), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("~/.config/scripts/volume_control.sh"),      { locked = true, repeating = true })
-hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("~/.config/scripts/volume_control.sh down"),      { locked = true, repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("~/.config/scripts/volume_control.sh toggle"),     { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
