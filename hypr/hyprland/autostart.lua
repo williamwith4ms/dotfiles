@@ -2,6 +2,7 @@ require("hyprland/var")
 
 hl.on("hyprland.start", function()
 
+    hl.exec_cmd("protonvpn-app")
     -- Bar
     hl.exec_cmd("eww open bar0")
     hl.exec_cmd("eww open bar1")
