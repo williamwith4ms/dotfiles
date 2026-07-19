@@ -14,6 +14,10 @@ $bg-accent-yellow: #c2b25c;
 $bg-accent-purple: #7c5fc0;
 $bg-accent-cyan: #5ca7a7;
 
+* {
+    all: unset;
+}
+
 .bar0, 
 .bar1 {
     background-color: transparent;
@@ -31,6 +35,7 @@ $bg-accent-cyan: #5ca7a7;
     border: 2px solid;
     border-color: $bg-accent-green;
     font-family: 'JetBrains Mono NF', monospace;
+    color: $fg-color;
 }
 
 
@@ -52,6 +57,7 @@ $bg-accent-cyan: #5ca7a7;
 
 // * WORKSPACES * //
 .workspaces {
+    color: $fg-color;
     background-color: $bg-color-bold;
     padding: 0px 10px;
     margin: 2px;
@@ -67,8 +73,10 @@ $bg-accent-cyan: #5ca7a7;
 }
 
 .workspaces button {
+    background-color: transparent;
     border: none;
     padding: 4px 12px 4px 8px;
+    color: $fg-color;
 }
 
 .workspaces button:hover {
@@ -86,7 +94,7 @@ $bg-accent-cyan: #5ca7a7;
 
 // * VOLUME * //
 .volume {
-    background-color: $bg-color-bold;
+    background-color: #141414;
     border-radius: 13px;
     padding: 0px 10px;
     margin: 2px;
