@@ -186,3 +186,16 @@ tooltip {
     padding: 4px 8px;
     @include raised;
 }
+
+menu, menuitem {
+    background-color: $bg-color;
+    color: $fg-color;
+    border-radius: 0px;
+    padding: 4px 8px;
+    @include raised;
+}
+
+menuitem:hover {
+    background-color: rgba($bevel-shadow, 0.25);
+    @include sunken;
+}

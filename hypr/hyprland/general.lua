@@ -23,8 +23,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border = "rgba(5ca77cee)",
-            inactive_border = "rgba(595959aa)"
+            active_border = "rgba(000080FF)",
+            inactive_border = "rgba(D4D0C8FF)"
         },
 
         resize_on_border = false,
@@ -33,8 +33,8 @@ hl.config({
     },
 
     decoration = {
-        rounding = 10,
-        rounding_power = 2,
+        -- rounding = 10,
+        -- rounding_power = 2,
 
         blur = {
             enabled = true,
