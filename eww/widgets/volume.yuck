@@ -5,7 +5,7 @@
   (button
       :class "volume"
       :halign "end"
-      :onclick "pavucontrol &"
+      :onclick "pavucontrol-qt &"
       :onmiddleclick "~/.config/scripts/volume_control.sh toggle"
       (label :text "${current_volume}")
     )
