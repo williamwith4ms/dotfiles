@@ -14,9 +14,9 @@
 !kitty
 !kitty/**
 
-!fish
-fish/fish_variables
-fish/completions
+# !fish
+# fish/fish_variables
+# fish/completions
 
 !dunst
 !dunst/**
