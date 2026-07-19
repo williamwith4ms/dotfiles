@@ -144,3 +144,15 @@ $bg-accent-cyan: #5ca7a7;
     margin: 2px;
     border-radius: 13px;
 }
+
+menu, menuitem {
+    background-color: $bg-color-bold;
+    color: $fg-color;
+    border-radius: 13px;
+    padding: 0px 10px;
+    margin: 2px;
+}
+
+menuitem:hover {
+    background-color: rgba($fg-color, 0.5);
+}
