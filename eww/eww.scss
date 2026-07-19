@@ -2,10 +2,10 @@
 // * COLORS AND GLOBAL * //
 ///////////////////////////
 
-$fg-color: #d9d9d9;
-$bg-color: #232323;
-$fg-color-bold: #ffffff;
-$bg-color-bold: #141414;
+$fg-color: #000000;
+$bg-color: #D4D0C8;
+$fg-color-bold: #000000;
+$bg-color-bold: #D4D0C8;
 
 $bg-accent-green: #5ca77c;
 $bg-accent-red: #c2565a;
@@ -14,42 +14,63 @@ $bg-accent-yellow: #c2b25c;
 $bg-accent-purple: #7c5fc0;
 $bg-accent-cyan: #5ca7a7;
 
+// four-tone bevel palette
+$bevel-highlight: #ffffff;
+$bevel-light:     #dfdfdf;
+$bevel-shadow:    #808080;
+$bevel-dark:      #000000;
+
 * {
     all: unset;
 }
 
-.bar0, 
+@mixin raised {
+    box-shadow:
+        inset 1px 1px 0px 0px $bevel-highlight,
+        inset -1px -1px 0px 0px $bevel-dark,
+        inset 2px 2px 0px 0px $bevel-light,
+        inset -2px -2px 0px 0px $bevel-shadow;
+    border: none;
+}
+
+@mixin sunken {
+    box-shadow:
+        inset 1px 1px 0px 0px $bevel-dark,
+        inset -1px -1px 0px 0px $bevel-highlight,
+        inset 2px 2px 0px 0px $bevel-shadow,
+        inset -2px -2px 0px 0px $bevel-light;
+    border: none;
+}
+
+.bar0,
 .bar1 {
     background-color: transparent;
     padding: 0px;
     margin: 0px;
     border: 0px;
-}
-
-.bar {
-    margin: 2px 4px;
-    padding: 2px 4px;
-    font-weight: bold;
-    border-radius: 13px;
-    background-color: rgba($bg-color, 0.9);
-    border: 2px solid;
-    border-color: $bg-accent-green;
-    font-family: 'JetBrains Mono NF', monospace;
     color: $fg-color;
 }
 
+.bar {
+    padding: 2px 4px;
+    // font-weight: bold;
+    border-radius: 0px;
+    background-color: $bg-color;
+    font-family: 'Tahoma', sans-serif;
+    @include raised;
+}
 
 ////////////////
 // * GROUPS * //
 ////////////////
 
-// .right {}
-
-// .center {}
-
-// .left {}
-
-
+.left,
+.center,
+.right {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
 
 /////////////////
 // * WIDGETS * //
@@ -57,31 +78,34 @@ $bg-accent-cyan: #5ca7a7;
 
 // * WORKSPACES * //
 .workspaces {
-    color: $fg-color;
     background-color: $bg-color-bold;
-    padding: 0px 10px;
+    padding: 0px 6px;
     margin: 2px;
-    border-radius: 13px;
-}
-
-.ws-active {
-    color: $bg-accent-green;
-}
-
-.ws-inactive {
-    background-color: transparent;
+    border-radius: 0px;
+    @include raised;
 }
 
 .workspaces button {
     background-color: transparent;
     border: none;
-    padding: 4px 12px 4px 8px;
+    padding: 4px 10px;
+    border-radius: 0px;
     color: $fg-color;
 }
 
 .workspaces button:hover {
-    background-color: rgba($fg-color, 0.5);
-    border: none;
+    background-color: rgba($bevel-shadow, 0.25);
+    @include sunken;
+}
+
+.ws-active {
+    @include sunken;
+    color: $fg-color-bold;
+    background-color: $bg-color;
+}
+
+.ws-inactive {
+    background-color: transparent;
 }
 
 // * UPDATES * //
@@ -89,52 +113,60 @@ $bg-accent-cyan: #5ca7a7;
     background-color: $bg-color-bold;
     padding: 0px 10px;
     margin: 2px;
-    border-radius: 13px;
+    border-radius: 0px;
+    @include raised;
 }
 
 // * VOLUME * //
 .volume {
-    background-color: #141414;
-    border-radius: 13px;
+    background-color: $bg-color-bold;
+    color: $fg-color-bold;
+    border-radius: 0px;
     padding: 0px 10px;
     margin: 2px;
-    border: none;
+    @include raised;
 }
 
 .volume:hover {
-    background-color: rgba($fg-color, 0.5);
+    background-color: rgba($bevel-shadow, 0.2);
 }
 
 // * TRAY * //
 .tray {
     background-color: $bg-color-bold;
-    border-radius: 13px;
+    border-radius: 0px;
     min-width: 50px;
     padding: 0px 10px;
     margin: 2px;
+    @include raised;
 }
 
 // * MEDIA * //
 .media {
     background-color: $bg-color-bold;
-    border-radius: 13px;
+    border-radius: 0px;
     padding: 0px 10px;
     margin: 2px;
+    @include raised;
 }
 
 // * CLOCK * //
 .clock {
     background-color: $bg-color-bold;
-    border-radius: 13px;
+    border-radius: 0px;
     padding: 0px 10px;
     margin: 2px;
+    @include raised;
 }
+
+
 // * WINDOW TITLE * //
 .window_title {
     background-color: $bg-color-bold;
-    border-radius: 13px;
+    border-radius: 0px;
     padding: 0px 10px;
     margin: 2px;
+    @include raised;
 }
 
 // * BATTERY * //
@@ -142,5 +174,15 @@ $bg-accent-cyan: #5ca7a7;
     background-color: $bg-color-bold;
     padding: 0px 10px;
     margin: 2px;
-    border-radius: 13px;
+    border-radius: 0px;
+    @include raised;
+}
+
+// * TOOLTIP * //
+tooltip {
+    background-color: $bg-color;
+    color: $fg-color;
+    border-radius: 0px;
+    padding: 4px 8px;
+    @include raised;
 }
