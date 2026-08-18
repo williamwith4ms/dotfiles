@@ -39,3 +39,5 @@ gtk-3.0/bookmarks
 !gtk-4.0/**
 gtk-4.0/assets/
 gtk-4.0/bookmarks
+
+!switch.sh
