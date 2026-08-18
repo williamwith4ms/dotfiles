@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-THEME_NAME="Breeze-Dark"
+THEME_NAME="Gruvbox-Dark"
 ICON_THEME="Papirus-Dark"
 CURSOR_THEME="Adwaita"
 FONT_NAME="Noto Sans 11"

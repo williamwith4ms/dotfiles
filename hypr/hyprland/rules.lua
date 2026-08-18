@@ -1,8 +1,8 @@
--- hl.window_rule {
---   name = "kitty-transparency",
---   match = {class = "^(kitty)$"},
---   opacity = 0.9
--- }
+hl.window_rule({
+	name = "kitty-transparency",
+	match = { class = "^(kitty)$" },
+	opacity = 0.95,
+})
 
 hl.window_rule({
 	name = "anki-transparency",

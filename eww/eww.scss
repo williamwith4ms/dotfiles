@@ -2,19 +2,18 @@
 // * COLORS AND GLOBAL * //
 ///////////////////////////
 
-$fg-color-muted: #8c8c8c;
-$bg-color-muted: #2d2d2d;
-$fg-color: #d9d9d9;
-$bg-color: #232323;
-$fg-color-bold: #ffffff;
-$bg-color-bold: #141414;
-
-$bg-accent-green: #5ca77c;
-$bg-accent-red: #c2565a;
-$bg-accent-blue: #5c7cc2;
-$bg-accent-yellow: #c2b25c;
-$bg-accent-purple: #7c5fc0;
-$bg-accent-cyan: #5ca7a7;
+$fg-color-muted: #a89984;
+$bg-color-muted: #3c3836;
+$fg-color: #ebdbb2;
+$bg-color: #1d2021;
+$fg-color-bold: #fbf1c7;
+$bg-color-bold: #141617;
+$bg-accent-green: #98971a;
+$bg-accent-red: #cc241d;
+$bg-accent-blue: #458588;
+$bg-accent-yellow: #d79921;
+$bg-accent-purple: #b16286;
+$bg-accent-cyan: #689d6a;
 
 * {
   all: unset;
@@ -33,7 +32,7 @@ $bg-accent-cyan: #5ca7a7;
   // padding: 2px 4px;
   font-weight: bold;
   // border-radius: 13px;
-  background-color: rgba($bg-color, 1);
+  background-color: rgba($bg-color, 0.95);
   border: 2px solid;
   border-color: $bg-color-muted;
   font-family: 'JetBrains Mono NF', monospace;
