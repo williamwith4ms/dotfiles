@@ -1,11 +1,11 @@
 configuration {
 /*	modes: "window,drun,run,ssh";*/
-font: "JetBrainsMono Nerd Font 12";
-location: 2;
+/*	font: "mono 12";*/
+/*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-show-icons: true;
+/*	show-icons: false;*/
 /*	preview-cmd: ;*/
 /*	on-selection-changed: ;*/
 /*	on-mode-changed: ;*/
@@ -22,7 +22,7 @@ show-icons: true;
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
-drun-match-fields: "name";
+/*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-exclude-categories: ;*/
 /*	drun-show-actions: false;*/
@@ -167,4 +167,4 @@ drun-match-fields: "name";
   }
 }
 
-@theme "~/.config/rofi/theme.rasi"
+@theme "/usr/share/rofi/themes/dmenu.rasi"
