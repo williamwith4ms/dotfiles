@@ -4,26 +4,26 @@
 --   opacity = 0.9
 -- }
 
-hl.window_rule {
-  name = "anki-transparency",
-  match = {class = "^(anki)$"},
-  opacity = 0.95
-}
+hl.window_rule({
+	name = "anki-transparency",
+	match = { class = "^(anki)$" },
+	opacity = 0.95,
+})
 
-hl.window_rule {
-  name = "obsidian-transparency",
-  match = {class = "^(obsidian)$"},
-  opacity = 0.95
-}
+hl.window_rule({
+	name = "obsidian-transparency",
+	match = { class = "^(obsidian)$" },
+	opacity = 0.95,
+})
 
-hl.window_rule {
-  name = "floating",
-  match = {class = "pavucontrol-qt"},
-  float = true,
-  size = "600 800",
-}
+hl.window_rule({
+	name = "floating",
+	match = { class = "pavucontrol-qt" },
+	float = true,
+	size = "600 800",
+})
 
-hl.window_rule {
+hl.window_rule({
 	-- name = fix-xwayland-drags,
 	-- match:class = ^$
 	-- match:title = ^$
@@ -34,19 +34,29 @@ hl.window_rule {
 
 	-- no_focus = true
 
-  name = "fix-xwayland-drags",
-  match = {xwayland = true, float = true, fullscreen = false, pin = false},
-  no_focus = true
-}
+	name = "fix-xwayland-drags",
+	match = { xwayland = true, float = true, fullscreen = false, pin = false },
+	no_focus = true,
+})
 
-hl.window_rule {
-  name = "suppress-maximize-events",
-  match = {class = ".*"},
-  suppress_event = "maximize"
-}
+hl.window_rule({
+	name = "suppress-maximize-events",
+	match = { class = ".*" },
+	suppress_event = "maximize",
+})
 
-hl.window_rule {
-  name = "keepassxc-float", 
-  match = {class = "^(org.keepassxc.*)$"},
-  float = true,
-}
+hl.window_rule({
+	name = "keepassxc-float",
+	match = { class = "^(org.keepassxc.*)$" },
+	float = true,
+})
+
+hl.window_rule({
+	match = { class = "^(discord)$" },
+	workspace = "special:chat silent",
+})
+
+hl.window_rule({
+	match = { class = "^(Spotify|spotify)$" },
+	workspace = "special:music silent",
+})

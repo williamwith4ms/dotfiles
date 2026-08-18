@@ -9,6 +9,14 @@ hl.monitor({
     output = "DP-1",
     mode = "1920x1080@60.00Hz",
     position = "2560x240",
+    scale = "1",
+    transform = 3
+})
+
+hl.monitor({
+    output = "HDMI-A-1",
+    mode = "2560x1440@59.95Hz",
+    position = "0x1440",
     scale = "1"
 })
 
@@ -65,6 +73,7 @@ hl.config({
 
     input = {
         kb_layout = "us",
+        kb_options = "compose:ralt",
 
         follow_mouse = 1,
 
