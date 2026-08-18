@@ -1,95 +1,95 @@
 hl.monitor({
-    output = "DP-3",
-    mode = "2560x1440@165.00Hz",
-    position = "0x0",
-    scale = "1"
+	output = "DP-3",
+	mode = "2560x1440@165.00Hz",
+	position = "0x0",
+	scale = "1",
 })
 
 hl.monitor({
-    output = "DP-1",
-    mode = "1920x1080@60.00Hz",
-    position = "2560x240",
-    scale = "1",
-    transform = 3
+	output = "DP-1",
+	mode = "1920x1080@60.00Hz",
+	position = "2560x240",
+	scale = "1",
+	transform = 3,
 })
 
 hl.monitor({
-    output = "HDMI-A-1",
-    mode = "2560x1440@59.95Hz",
-    position = "0x1440",
-    scale = "1"
+	output = "HDMI-A-1",
+	mode = "2560x1440@59.95Hz",
+	position = "0x1440",
+	scale = "1",
 })
 
 hl.config({
-    general = {
-        gaps_in = 5,
-        gaps_out = 10,
-        20,
-        20,
-        20,
+	general = {
+		gaps_in = 3,
+		gaps_out = 5,
+		10,
+		10,
+		10,
 
-        border_size = 2,
+		border_size = 2,
 
-        col = {
-            active_border = "rgba(5ca77cee)",
-            inactive_border = "rgba(595959aa)"
-        },
+		col = {
+			active_border = "rgba(5ca77cee)",
+			inactive_border = "rgba(595959aa)",
+		},
 
-        resize_on_border = false,
+		resize_on_border = false,
 
-        allow_tearing = false
-    },
+		allow_tearing = false,
+	},
 
-    decoration = {
-        rounding = 10,
-        rounding_power = 2,
+	decoration = {
+		-- rounding = 10,
+		-- rounding_power = 2,
 
-        blur = {
-            enabled = true,
-            size = 3,
-            passes = 1,
-            vibrancy = 0.1696
-        },
+		blur = {
+			enabled = true,
+			size = 3,
+			passes = 1,
+			vibrancy = 0.1696,
+		},
 
-        shadow = {
-            enabled = true,
-            range = 4,
-            render_power = 3,
-            color = "rgba(1a1a1aee)"
-        },
+		shadow = {
+			enabled = true,
+			range = 4,
+			render_power = 3,
+			color = "rgba(1a1a1aee)",
+		},
 
-        dim_inactive = false,
-        active_opacity = 1.0,
-        inactive_opacity = 1.0
-    },
+		dim_inactive = false,
+		active_opacity = 1.0,
+		inactive_opacity = 1.0,
+	},
 
-    animations = {
-        enabled = true,
-    },
+	animations = {
+		enabled = true,
+	},
 
-    dwindle = {
-        preserve_split = true
-    },
+	dwindle = {
+		preserve_split = true,
+	},
 
-    input = {
-        kb_layout = "us",
-        kb_options = "compose:ralt",
+	input = {
+		kb_layout = "us",
+		kb_options = "compose:ralt",
 
-        follow_mouse = 1,
+		follow_mouse = 1,
 
-        sensitivity = 0,
+		sensitivity = 0,
 
-        touchpad = {
-            natural_scroll = false,
-        },
-    },
+		touchpad = {
+			natural_scroll = false,
+		},
+	},
 
-    misc = {
-        disable_hyprland_logo = true,
-        force_default_wallpaper = 1
-    },
+	misc = {
+		disable_hyprland_logo = true,
+		force_default_wallpaper = 1,
+	},
 
-    master = {
-        new_status = "master"
-    }
+	master = {
+		new_status = "master",
+	},
 })

@@ -2,6 +2,8 @@
 // * COLORS AND GLOBAL * //
 ///////////////////////////
 
+$fg-color-muted: #8c8c8c;
+$bg-color-muted: #2d2d2d;
 $fg-color: #d9d9d9;
 $bg-color: #232323;
 $fg-color-bold: #ffffff;
@@ -15,27 +17,27 @@ $bg-accent-purple: #7c5fc0;
 $bg-accent-cyan: #5ca7a7;
 
 * {
-    all: unset;
+  all: unset;
 }
 
-.bar0, 
+.bar0,
 .bar1 {
-    background-color: transparent;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+  // background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
 
 .bar {
-    margin: 2px 4px;
-    padding: 2px 4px;
-    font-weight: bold;
-    border-radius: 13px;
-    background-color: rgba($bg-color, 0.9);
-    border: 2px solid;
-    border-color: $bg-accent-green;
-    font-family: 'JetBrains Mono NF', monospace;
-    color: $fg-color;
+  // margin: 2px 4px;
+  // padding: 2px 4px;
+  font-weight: bold;
+  // border-radius: 13px;
+  background-color: rgba($bg-color, 1);
+  border: 2px solid;
+  border-color: $bg-color-muted;
+  font-family: 'JetBrains Mono NF', monospace;
+  color: $fg-color;
 }
 
 
@@ -57,102 +59,104 @@ $bg-accent-cyan: #5ca7a7;
 
 // * WORKSPACES * //
 .workspaces {
-    color: $fg-color;
-    background-color: $bg-color-bold;
-    padding: 0px 10px;
-    margin: 2px;
-    border-radius: 13px;
+  color: $fg-color;
+  background-color: $bg-color-bold;
+  padding: 0px 10px;
+  margin: 2px;
+  // border-radius: 13px;
 }
 
 .ws-active {
-    color: $bg-accent-green;
+  color: $bg-accent-green;
 }
 
 .ws-inactive {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .workspaces button {
-    background-color: transparent;
-    border: none;
-    padding: 4px 12px 4px 8px;
-    color: $fg-color;
+  background-color: transparent;
+  border: none;
+  padding: 4px 12px 4px 8px;
+  color: $fg-color;
 }
 
 .workspaces button:hover {
-    background-color: rgba($fg-color, 0.5);
-    border: none;
+  background-color: rgba($fg-color, 0.5);
+  border: none;
 }
 
 // * UPDATES * //
 .updates {
-    background-color: $bg-color-bold;
-    padding: 0px 10px;
-    margin: 2px;
-    border-radius: 13px;
+  background-color: $bg-color-bold;
+  padding: 0px 10px;
+  margin: 2px;
+  // border-radius: 13px;
 }
 
 // * VOLUME * //
 .volume {
-    background-color: #141414;
-    border-radius: 13px;
-    padding: 0px 10px;
-    margin: 2px;
-    border: none;
+  background-color: #141414;
+  // border-radius: 13px;
+  padding: 0px 10px;
+  margin: 2px;
+  border: none;
 }
 
 .volume:hover {
-    background-color: rgba($fg-color, 0.5);
+  background-color: rgba($fg-color, 0.5);
 }
 
 // * TRAY * //
 .tray {
-    background-color: $bg-color-bold;
-    border-radius: 13px;
-    min-width: 50px;
-    padding: 0px 10px;
-    margin: 2px;
+  background-color: $bg-color-bold;
+  // border-radius: 13px;
+  min-width: 50px;
+  padding: 0px 10px;
+  margin: 2px;
 }
 
 // * MEDIA * //
 .media {
-    background-color: $bg-color-bold;
-    border-radius: 13px;
-    padding: 0px 10px;
-    margin: 2px;
+  background-color: $bg-color-bold;
+  // border-radius: 13px;
+  padding: 0px 10px;
+  margin: 2px;
 }
 
 // * CLOCK * //
 .clock {
-    background-color: $bg-color-bold;
-    border-radius: 13px;
-    padding: 0px 10px;
-    margin: 2px;
+  background-color: $bg-color-bold;
+  // border-radius: 13px;
+  padding: 0px 10px;
+  margin: 2px;
 }
+
 // * WINDOW TITLE * //
 .window_title {
-    background-color: $bg-color-bold;
-    border-radius: 13px;
-    padding: 0px 10px;
-    margin: 2px;
+  background-color: $bg-color-bold;
+  // border-radius: 13px;
+  padding: 0px 10px;
+  margin: 2px;
 }
 
 // * BATTERY * //
 .battery {
-    background-color: $bg-color-bold;
-    padding: 0px 10px;
-    margin: 2px;
-    border-radius: 13px;
+  background-color: $bg-color-bold;
+  padding: 0px 10px;
+  margin: 2px;
+  // border-radius: 13px;
 }
 
-menu, menuitem {
-    background-color: $bg-color-bold;
-    color: $fg-color;
-    border-radius: 13px;
-    padding: 0px 10px;
-    margin: 2px;
+menu,
+menuitem {
+  background-color: $bg-color-bold;
+  color: $fg-color;
+  // border-radius: 13px;
+  padding: 0px 10px;
+  margin: 2px;
 }
 
 menuitem:hover {
-    background-color: rgba($fg-color, 0.5);
+  background-color: rgba($fg-color, 0.5);
 }

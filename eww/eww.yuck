@@ -52,10 +52,7 @@
   :monitor 0
   :windowtype "dock"
   :geometry (geometry
-    :x "0%"
-    :y "0.5%"
-    :width "99%"
-    :height "2%"
+    :width "100%"
   :anchor "top center")
   :exclusive true
   (bar)
@@ -65,10 +62,7 @@
   :monitor 1
   :windowtype "dock"
   :geometry (geometry
-    :x "0%"
-    :y "0.5%"
-    :width "99%"
-    :height "2%"
+    :width "100%"
   :anchor "top center")
   :exclusive true
   (bar)
