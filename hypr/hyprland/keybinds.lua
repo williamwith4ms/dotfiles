@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 require("hyprland/var")
 
 local mainMod = "SUPER"
