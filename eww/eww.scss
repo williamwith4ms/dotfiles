@@ -53,10 +53,11 @@ $bevel-dark:      #000000;
 
 .bar {
     padding: 2px 4px;
-    // font-weight: bold;
+    font-weight: bold;
     border-radius: 0px;
     background-color: $bg-color;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Terminess Nerd Font Mono', 'JetBrainsMono NF ExtraLight';
+    font-size: 16px;
     @include raised;
 }
 
