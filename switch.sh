@@ -3,8 +3,8 @@ set -euo pipefail
 
 THEME_NAME="Chicago95"
 ICON_THEME="Memphis98"
-CURSOR_THEME="Chicago95_Standard_Cursors"
-FONT_NAME="Tahoma 10"
+CURSOR_THEME="Chicago95_Cursor_White"
+FONT_NAME="Tahoma 13"
 
 gsettings set org.gnome.desktop.interface gtk-theme "$THEME_NAME"
 gsettings set org.gnome.desktop.interface icon-theme "$ICON_THEME"
