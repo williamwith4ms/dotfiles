@@ -41,3 +41,6 @@ gtk-4.0/assets/
 gtk-4.0/bookmarks
 
 !switch.sh
+
+!README.md
+!demo.png
