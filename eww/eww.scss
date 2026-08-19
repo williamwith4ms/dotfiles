@@ -1,13 +1,12 @@
 ///////////////////////////
 // * COLORS AND GLOBAL * //
 ///////////////////////////
-
 $fg-color-muted: #a89984;
 $bg-color-muted: #3c3836;
 $fg-color: #ebdbb2;
 $bg-color: #1d2021;
 $fg-color-bold: #fbf1c7;
-$bg-color-bold: #141617;
+$bg-color-bold: #282828;
 $bg-accent-green: #98971a;
 $bg-accent-red: #cc241d;
 $bg-accent-blue: #458588;
@@ -21,141 +20,160 @@ $bg-accent-cyan: #689d6a;
 
 .bar0,
 .bar1 {
-  // background-color: transparent;
-  padding: 0px;
+  background-color: transparent;
+  padding: 0px 4px;
   margin: 0px;
   border: 0px;
 }
 
 .bar {
-  // margin: 2px 4px;
-  // padding: 2px 4px;
-  font-weight: bold;
-  // border-radius: 13px;
+  font-weight: 600;
   background-color: rgba($bg-color, 0.95);
-  border: 2px solid;
-  border-color: $bg-color-muted;
   font-family: 'JetBrains Mono NF', monospace;
   color: $fg-color;
 }
 
-
 ////////////////
 // * GROUPS * //
 ////////////////
-
 // .right {}
-
 // .center {}
-
 // .left {}
-
-
 
 /////////////////
 // * WIDGETS * //
 /////////////////
 
+%card {
+  background-color: $bg-color-bold;
+  border-radius: 3px;
+  padding: 2px 12px;
+  margin: 4px 3px;
+  border: 2px solid rgba($bg-color-muted, 0.8);
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 1px 3px rgba(black, 0.35);
+}
+
+%card-hover {
+  background-color: lighten($bg-color-bold, 6%);
+}
+
 // * WORKSPACES * //
 .workspaces {
-  color: $fg-color;
-  background-color: $bg-color-bold;
-  padding: 0px 10px;
-  margin: 2px;
-  // border-radius: 13px;
-}
-
-.ws-active {
-  color: $bg-accent-green;
-}
-
-.ws-inactive {
-  background-color: transparent;
+  @extend %card;
+  border-top-color: rgba($bg-accent-green, 0.8);
+  padding: 0px 6px;
+  margin: 4px 3px;
 }
 
 .workspaces button {
   background-color: transparent;
   border: none;
-  padding: 4px 12px 4px 8px;
-  color: $fg-color;
+  border-radius: 8px;
+  padding: 4px 10px 4px 7px;
+  margin: 2px;
+  color: $fg-color-muted;
+  min-width: 10px;
+}
+
+.workspaces button.ws-active,
+.workspaces button.active {
+  background-color: rgba($bg-accent-green, 0.25);
+  color: $bg-accent-green;
 }
 
 .workspaces button:hover {
-  background-color: rgba($fg-color, 0.5);
-  border: none;
-}
-
-// * UPDATES * //
-.updates {
-  background-color: $bg-color-bold;
-  padding: 0px 10px;
-  margin: 2px;
-  // border-radius: 13px;
+  background-color: rgba($fg-color, 0.12);
+  color: $fg-color-bold;
 }
 
 // * VOLUME * //
 .volume {
-  background-color: #141414;
-  // border-radius: 13px;
-  padding: 0px 10px;
-  margin: 2px;
-  border: none;
+  @extend %card;
+  color: $bg-accent-blue;
+  border-top-color: rgba($bg-accent-blue, 0.8);
 }
 
 .volume:hover {
-  background-color: rgba($fg-color, 0.5);
+  @extend %card-hover;
 }
 
 // * TRAY * //
 .tray {
-  background-color: $bg-color-bold;
-  // border-radius: 13px;
+  @extend %card;
   min-width: 50px;
-  padding: 0px 10px;
-  margin: 2px;
+  border-top-color: rgba($bg-accent-cyan, 0.8);
+}
+
+.tray:hover {
+  @extend %card-hover;
 }
 
 // * MEDIA * //
 .media {
-  background-color: $bg-color-bold;
-  // border-radius: 13px;
-  padding: 0px 10px;
-  margin: 2px;
+  @extend %card;
+  color: $bg-accent-purple;
+  border-top-color: rgba($bg-accent-purple, 0.8);
+}
+
+.media:hover {
+  @extend %card-hover;
 }
 
 // * CLOCK * //
 .clock {
-  background-color: $bg-color-bold;
-  // border-radius: 13px;
-  padding: 0px 10px;
-  margin: 2px;
+  @extend %card;
+  border-top-color: rgba($bg-accent-yellow, 0.8);
+  color: $fg-color-bold;
+  font-weight: 700;
+}
+
+.clock:hover {
+  @extend %card-hover;
 }
 
 // * WINDOW TITLE * //
 .window_title {
-  background-color: $bg-color-bold;
-  // border-radius: 13px;
-  padding: 0px 10px;
-  margin: 2px;
+  @extend %card;
+  color: $fg-color-muted;
+  border-top-color: rgba($bg-accent-red, 0.6);
 }
 
 // * BATTERY * //
 .battery {
-  background-color: $bg-color-bold;
-  padding: 0px 10px;
-  margin: 2px;
-  // border-radius: 13px;
+  @extend %card;
+  color: $bg-accent-cyan;
 }
 
+.battery.charging {
+  color: $bg-accent-green;
+}
+
+.battery.warning:not(.charging) {
+  color: $bg-accent-yellow;
+}
+
+.battery.critical:not(.charging) {
+  color: $bg-accent-red;
+  font-weight: 700;
+}
+
+.battery:hover {
+  @extend %card-hover;
+}
+
+// * MENUS / POPUPS * //
 menu,
 menuitem {
   background-color: $bg-color-bold;
   color: $fg-color;
-  // border-radius: 13px;
-  padding: 0px 10px;
+  border-radius: 10px;
+  padding: 4px 12px;
   margin: 2px;
+  border: 1px solid rgba($bg-color-muted, 0.6);
 }
 
 menuitem:hover {
-  background-color: rgba($fg-color, 0.5);
+  background-color: rgba($fg-color, 0.15);
+  color: $fg-color-bold;
 }
