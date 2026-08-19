@@ -1,15 +1,15 @@
 (include "widgets/index.yuck")
 
-(defwidget bar []
+(defwidget hzBar []
   (centerbox :orientation "h"
   :class "bar"
-    (left)
-    (center)
-    (right)
+    (hzLeft)
+    (hzCenter)
+    (hzRight)
   )
 )
 
-(defwidget left []
+(defwidget hzLeft []
   (box :orientation "h"
     :halign "start"
     :spacing 5
@@ -22,19 +22,18 @@
   )
 )
 
-(defwidget center []
+(defwidget hzCenter []
   (box :orientation "h"
     :halign "center"
     :spacing 5
     :class "center"
     :hexpand false
     :space-evenly false
-    
     (workspaces)
   )
 )
 
-(defwidget right []
+(defwidget hzRight []
   (box :orientation "h"
     :halign "end"
     :spacing 10
@@ -48,22 +47,77 @@
   )
 )
 
-(defwindow bar0
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry
-    :width "100%"
-  :anchor "top center")
-  :exclusive true
-  (bar)
+(defwidget vBar []
+  (centerbox :orientation "h"
+  :class "bar"
+    (vLeft)
+    (vCenter)
+    (vRight)
+  )
 )
 
-(defwindow bar1
+(defwidget vLeft []
+  (box :orientation "h"
+    :halign "start"
+    :spacing 5
+    :class "left"
+    :hexpand true
+    :space-evenly false
+    (clock)
+    ; (updates)
+  )
+)
+
+(defwidget vCenter []
+  (box :orientation "h"
+    :halign "center"
+    :spacing 5
+    :class "center"
+    :hexpand false
+    :space-evenly false
+    (workspaces)
+  )
+)
+
+(defwidget vRight []
+  (box :orientation "h"
+    :halign "end"
+    :spacing 10
+    :class "right"
+    :hexpand true
+    :space-evenly false
+    (tray)
+    (volume)
+  )
+)
+
+(defwindow hzBar1
   :monitor 1
   :windowtype "dock"
   :geometry (geometry
     :width "100%"
   :anchor "top center")
   :exclusive true
-  (bar)
+  (hzBar)
 )
+
+(defwindow hzBar0
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry
+    :width "100%"
+  :anchor "top center")
+  :exclusive true
+  (hzBar)
+)
+
+(defwindow vBar0
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry
+    :width "100%"
+  :anchor "top center")
+  :exclusive true
+  (vBar)
+)
+
