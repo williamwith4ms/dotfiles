@@ -4,8 +4,8 @@ require("hyprland/var")
 hl.on("hyprland.start", function()
 	hl.exec_cmd("protonvpn-app")
 	-- Bar
-	hl.exec_cmd("eww open hzBar0")
-	hl.exec_cmd("eww open vBar1")
+	hl.exec_cmd("eww open hzBar1")
+	hl.exec_cmd("eww open vBar0")
 
 	-- workspace
 	hl.exec_cmd(wallpaper_setter .. wallpaper)
