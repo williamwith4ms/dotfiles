@@ -1,4 +1,8 @@
 # Dotfiles
+![GitHub branch count](https://img.shields.io/github/branches/williamwith4ms/dotfiles)
+
+
+Each branch is a different config (I get bored of them easily). This is not an exhaustive list every config ive used, just the ones I still have the code for.
 
 ## Squares
 ![squares](pics/squares.png)
