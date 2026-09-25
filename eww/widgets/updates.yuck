@@ -1,9 +1,0 @@
-(deflisten current_updates "scripts/eww_updates_listener.sh")
-
-(defwidget updates []
-    (box
-        :class "updates"
-        :halign "end"
-        (label :text "󰊠 ${current_updates}")
-    )
-)
